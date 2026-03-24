@@ -1529,7 +1529,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
     <div class="code-block"><pre>Andrew Matelis
 Student Researcher, Biomedical Engineering | Catholic University of America
 Gonzaga College High School '28
-Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="224f4356474e4b514362454d4c584345430c4d5045">[email&#160;protected]</a>
+Email: matelisa@gonzaga.org
 LinkedIn: linkedin.com/in/andrewmatelis
 GitHub: github.com/AMatelis</pre></div>
     <p>Set this up in Gmail Settings under Signatures. Takes five minutes and you never have to think about it again.</p>
@@ -1689,13 +1689,13 @@ GitHub: github.com/AMatelis</pre></div>
     <li><a href="#" onclick="showHome(event); setTimeout(function(){ document.getElementById('modules').scrollIntoView({behavior:'smooth'}); }, 150); return false;">Curriculum</a></li>
     <li><a href="#" onclick="showHome(event); scrollToSection('about')">About</a></li>
     <li><a href="https://neurosage.blogspot.com/" target="_blank">NeuroSage Blog</a></li>
-    <li><a href="/cdn-cgi/l/email-protection#afc2cedbcac3c6dcceefc8c0c1d5cec8ce81c0ddc8">Contact</a></li>
+    <li><a href="mailto:matelisa@gonzaga.org">Contact</a></li>
     <li><a href="https://github.com/AMatelis" target="_blank">GitHub</a></li>
   </ul>
   <div class="footer-copy">2026 Andrew Matelis. Free to use and share.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function showModule(event, num) {
   if (event) event.preventDefault();
   document.getElementById('mainSite').classList.add('hidden');
@@ -1744,3 +1744,13 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.1 });
+
+document.querySelectorAll('.module-item, .why-item, .founder-card').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(16px)';
+  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
